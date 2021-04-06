@@ -5,10 +5,10 @@ using namespace std;
 
 int main() {
     for (int A = 10000; A > 0; A--) {
-        bool f = 1;
+        bool f = true;
         for (int x = 0; x < 10000; x++) {
             if (!(i((x >= 11), (x * x >= A)))) {
-                f = 0;
+                f = false;
             }
         }
         if (f) {
